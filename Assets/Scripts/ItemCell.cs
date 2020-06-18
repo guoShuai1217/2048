@@ -23,11 +23,25 @@ public class ItemCell : MonoBehaviour
         ima = GetComponent<Image>();
     }
 
+    /// <summary>
+    /// Sprite 赋值
+    /// </summary>
+    /// <param name="num"></param>
     public void SetSprite(int num)
     {
         Sprite tmp = ResourcesMgr.GetSprite(num);
         setSprite(tmp);
     }
+
+
+    /// <summary>
+    /// 播放特效
+    /// </summary>
+    public void PlayEffect()
+    {
+
+    }
+
 
     void setSprite(Sprite spr)
     {
